@@ -1,0 +1,25 @@
+//variables
+
+//var keyword is was invented in old version os js and it have the global scope which we can every where and we can re-declare and re-initialize it 
+var accName = "jafar";
+//here both re-initialize and re-declare worked 
+var accName = "jafhum";
+
+// let and const keywords are new ES6 updated keywords where they have only block scope and for the let key word we can re-initialize it but we can't re-declare it
+let accPassword= "Jafhum@786";
+
+// let accPassword = "Jafar@786"; //here we are re declaring that why it is showing error but re initilize can be work
+
+accPassword="jafar@786";
+
+//but for const keyword we can't re=declare and we can't re-initialize it 
+const accId = 1122;
+
+// accId = 2586; here both will not working
+
+//we can also do like this but it is not a good way
+
+accEmail = "jafar@gmail.com"
+
+
+console.table([accId, accName, accPassword, accEmail])
