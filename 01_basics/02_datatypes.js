@@ -39,6 +39,14 @@ console.log(add);//before changing it's datatype it is string because we used ""
 console.log(typeof adding);//after changing it's datatype will became to Number
 console.log(adding);//after changing it's datatype the value we stored in it is NaN (not a number)
 
+let check = 0; //type Number 
+let checking = Boolean(check); //it changed to boolean
+
+console.log(checking);//false because we have 0 value if we have 1 as our value it will be true
+console.log(typeof checking);//boolean
+
+
+
 
 
 
