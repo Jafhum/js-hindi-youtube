@@ -3,7 +3,7 @@
 //var keyword is was invented in old version os js and it have the global scope which we can every where and we can re-declare and re-initialize it 
 var accName = "jafar";
 //here both re-initialize and re-declare worked 
-var accName = "jafhum";
+var accName = "jafhum"; //prefer not to use var beacuse it's block scope and functional scope issues
 
 // let and const keywords are new ES6 updated keywords where they have only block scope and for the let key word we can re-initialize it but we can't re-declare it
 let accPassword= "Jafhum@786";
