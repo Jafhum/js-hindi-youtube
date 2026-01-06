@@ -45,7 +45,25 @@ let checking = Boolean(check); //it changed to boolean
 console.log(checking);//false because we have 0 value if we have 1 as our value it will be true
 console.log(typeof checking);//boolean
 
+/* Datatypes Summary
 
+** Primitive 7 Datatype 
+
+--String 
+--Number
+--Boolean
+--Null
+--Undifined
+--Symbol
+--BigInt
+
+** Non Primitive Datatypes 
+
+--Array
+--Objects
+--Functions
+
+*/
 
 
 
