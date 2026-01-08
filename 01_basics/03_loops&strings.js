@@ -147,5 +147,59 @@ console.log(String2.toLowerCase());  //jafhum
 let string3 = "    Jafar Jafhum     ";
 console.log(string3.trim());//Jafar Jafhum
 
+//slice() this methos is used for slice the particular part of a string using index values ,two parameters are allowed (1 , 3) 1st starting position and 2nd ending position and 2nd parameter is optional
+
+let slice = "ilovejs";
+console.log(slice.slice(1 , 5));//love
+
+/*
+slice method start's from 1 to 5 
+and last index will be ignored so from 1 index l 2) o 3) v 4)e 
+5)this will ignore 
+
+ */
+let slice1 = "ilovejs"
+let slice2 = slice1.slice(1);
+console.log(slice2);//lovejs from starting index to end 
+
+
+
+//concat() this method will concat the 2 strings 
+
+let con1 = "jafar";
+let con2 = "jafhum";
+console.log(con1.concat(con2));//jafarjafhum
+ 
+
+//replace() this method will replace the charecter or word from the sting 
+
+let rep = "love";
+console.log(rep.replace("l" , "D"));//dove
+
+let rep1 = "LoveLove";
+console.log(rep1.replace("Lo" ,"Do")); // DoveLove 
+//here only starting letter only will change if we want both Lo letter should change than we hane replaceAll() method
+
+
+
+//replaceAll()
+
+let rep2 = "LoveLove";
+console.log(rep2.replaceAll("Lo", "Do"));//DoveDove
+
+
+//charAt()  this method used to find charter using the index number 
+
+let char ="Jafar";
+let char1 = char.charAt(4);
+console.log(char1);//r
+
+
+//prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their full name and ending with the fullname length.
+//ex user name ="jafar" , username should be "@jafar05"
+
+
+
+
 
 
