@@ -104,6 +104,9 @@ console.log(count);//[ 38, 101, 50, 83, 91 ]
 count.splice(2,0,102,103);//here addiing items in array from 2 index
 console.log(count);//[ 38, 101, 102, 103, 50,  83,  91]
 
+console.log("hello World");
+
+
 
 
 
