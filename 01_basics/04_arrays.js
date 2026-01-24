@@ -106,4 +106,20 @@ console.log(count);//[ 38, 101, 102, 103, 50,  83,  91]
 console.log("hello World");
 
 
+//forEach Loop 
+//this loop will work on Arrays and they also called as higer order method in js which they take function as a parameter or they return another function as their output 
+
+//syntax  arr.forEach(callBackFunction)  callbackfunction : here , it is a function to execute for each element in the array
+
+let arr9 =[1, 2, 3, 4, 5, 6]
+
+// arr9.forEach((val)=>{
+//     console.log(val);
+    
+// })
+
+arr9.forEach(function araay(val){
+    console.log(val);
+    
+})
 
