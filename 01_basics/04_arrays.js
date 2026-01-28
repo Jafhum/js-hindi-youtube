@@ -103,7 +103,7 @@ console.log(count);//[ 38, 101, 50, 83, 91 ]
 count.splice(2,0,102,103);//here addiing items in array from 2 index
 console.log(count);//[ 38, 101, 102, 103, 50,  83,  91]
 
-console.log("hello World");
+console.log("hello World"); // hello world
 
 
 //forEach Loop 
@@ -119,7 +119,101 @@ let arr9 =[1, 2, 3, 4, 5, 6]
 // })
 
 arr9.forEach(function araay(val){
-    console.log(val);
+    console.log(val); // 1 2 3 4 5 6
     
 })
+
+//i want print each index of an array with multiple of 2
+
+let print = [20,30,40,50];
+
+let prints = (val=>{
+    console.log(val*2); //40 60 80 100
+    
+});
+
+// print.forEach((val=>{
+//     console.log(val*2);
+    
+// }))  we print like this as well 
+
+print.forEach(prints);
+
+console.log("foreach() ends here");//foreach() ends here
+
+//Map() creates a new array with the result of some operation. the value it's callback returns are used to form a new array.
+
+//array.map(val,index,array); in map method we can pass three arguments
+
+let opt = [100,200,300,400,500];
+
+let newopt=opt.map((val)=>{
+   return val * 2;    
+})
+console.log(newopt);//[ 200, 400, 600, 800, 1000 ]
+console.log(opt);//[ 100, 200, 300, 400, 500 ] 
+
+//map() this method will not affect the original array 
+
+console.log("map() will end here"); //map() will end here
+
+//filter(): this is method will check the each index of array and filter the array based on condition and this will create the new Array & it will affect the original array
+
+let array = [1,2,3,4,5,6,7,8];
+console.log(array); //[1, 2, 3, 4,5, 6, 7, 8]
+//i want to only even values from an array 
+
+let evenArray = array.filter((val)=>{
+    return val % 2==0;
+})
+console.log(evenArray);//[ 2, 4, 6, 8 ]
+
+//i want to print the odd numbers from the array
+
+let oddArray = array.filter((val)=>{
+    return val % 2 !==0;
+})
+console.log(oddArray);//[ 1, 3, 5, 7 ]
+
+//i want to print the numbers  which are greater than 4
+
+let greaterArray = array.filter((val)=>{
+    return val > 4;
+})
+console.log(greaterArray);//[ 5, 6, 7, 8 ]
+console.log("filter() will end here");//filter() will end here
+
+//reduce(): this method will perform some operation and reduce the array into single value and it will return the single value and it will create the new array
+
+// i want to sum all the values from array and return the single value
+let sum =[1,2,3,4,5];
+
+let newSum=sum.reduce((pre , curr)=>{
+    return pre + curr;
+})
+console.log(newSum);//15
+/* how it's working 
+first it will check the two elements of an array one is previous(pre) val and another one is current(curr) val which are
+[1,2] after adding 1+2 = 3 this 3 will stored in pre val and the curr val will check another index [3,3] 3+3= 6 and [6,4] 6+ 4=10; [10,5] 10+5=15 and curr val ends here so the output is 15
+*/
+
+//now i want to find the value which is greater in the array
+
+let val=[1,5,3,8,6,4,9,0];
+
+let newVal=val.reduce((pre ,curr)=>{
+    return pre > curr ? pre : curr;
+})
+console.log(newVal);
+
+
+
+
+
+
+
+
+
+
+
 
